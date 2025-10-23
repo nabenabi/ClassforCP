@@ -19,6 +19,12 @@
                     main();
                 });
             });
+            
+            $(function() {
+                $("#btn2").click(function(e){
+                    $("#disp2").html("Welcome!");
+                });
+            });
 
             function main() {
                 $("#disp1").html("Hello, JavaScript!");
@@ -30,5 +36,6 @@
         <div id="disp1" class="out">DISPLAY 1</div>
         <div id="disp2" class="out">DISPLAY 2</div>
         <button id="btn">Run</button>
+        <button id="btn2">Run</button>
     </body>
 </html>
