@@ -19,13 +19,15 @@
                     main();
                 });
             });
-            
-            $(function() {
-                $("#btn2").click(function(e){
-                    $("#disp2").html("Welcome!");
-                });
-            });
-
+            var a = 0;
+            var txt = " ";
+            txt += "a: " + a + "<br>";
+            if(a==1){
+                txt+= "TRUE <br>";
+            }else{
+                txt+= "FALSE<br>";
+            }
+                txt += "a: " + a + "<br>";      
             function main() {
                 $("#disp1").html("Hello, JavaScript!</br>This is Monaca");
                 $("#disp1").css({
@@ -33,6 +35,7 @@
                     "font-family" : "fantasy",
                     "background-color" : "lightgray"
                 });
+                $("#disp2").html(txt);
             }
         </script>
     </head>
@@ -41,6 +44,5 @@
         <div id="disp1" class="out">DISPLAY 1</div>
         <div id="disp2" class="out">DISPLAY 2</div>
         <button id="btn">Run</button>
-        <button id="btn2">Run</button>
     </body>
 </html>
